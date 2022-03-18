@@ -3,22 +3,24 @@
   top: 0;
   width: 100%;
   background-color: #111;
+  z-index: 10;
 }
+
 .header__container {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
+
 .header-list__link {
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
+  letter-spacing: -0.2px;
   line-height: 1.25;
   color: #ffffff;
   transition: color 0.3s ease;
 }
+
 .header-list__link:hover {
   color: #135aa2;
 }
@@ -29,12 +31,15 @@
   }
 }
 
+// Computers
 @media (min-width: 992px) {
+
   .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .header-list {
     display: flex;
     align-items: center;
@@ -44,31 +49,41 @@
     & .header-list__item {
       margin-right: 30px;
     }
+
     & .header-list__item:last-child {
       margin-right: 0;
     }
   }
+
   .header__logo {
     position: absolute;
     top: 5px;
-    left: 48%;
-    max-width: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 50px;
+
+    &-img {
+      max-width: 60px;
+    }
   }
-  .header__logo-img {
-    max-width: 60px;
-  }
+
 }
+
+// Small laptops and tablets
 @media (max-width: 991px) {
+
   .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .header__logo-img {
     position: relative;
     max-width: 60px;
     z-index: 5;
   }
+
   .menu__icon {
     z-index: 5;
     display: inline-block;
@@ -105,6 +120,7 @@
       transform: scale(1) translate(0, -50%);
     }
   }
+
   .menu__icon._active {
     span {
       transform: scale(0) translate(0, -50%);
@@ -118,6 +134,7 @@
       transform: rotate(45deg) translate(0, 50%);
     }
   }
+
   .header__nav {
     position: fixed;
     top: 0;
@@ -128,21 +145,25 @@
     padding: 100px 30px 30px 30px;
     transition: right 0.3s ease 0s;
     overflow: auto;
+
+    &._active {
+      right: 0;
+    }
+
+    &::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 60px;
+      background-color: #111;
+      z-index: 2;
+    }
   }
-  .header__nav._active {
-    right: 0;
-  }
-  .header__nav::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 60px;
-    background-color: #111;
-    z-index: 2;
-  }
+
   .header-list {
+
     &__link {
       display: block;
       font-size: 18px;
@@ -150,8 +171,12 @@
       padding: 10px 0;
     }
   }
+
 }
+
+// Smartphones
 @media (max-width: 420px) {
+  
   .header__logo-img {
     max-width: 45px;
   }

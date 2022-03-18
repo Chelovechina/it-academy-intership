@@ -3,6 +3,11 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = `./dist`;
 const srcFolder = `./src`;
+const cleanFolder = `{
+  ./dist/css,
+  ./dist/img/*.*,
+  ./dist/index.html,
+}`;
 
 export const path = {
   build: {
@@ -29,7 +34,7 @@ export const path = {
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
     files: `${srcFolder}/files/**/*.*`
   },
-  clean: buildFolder,
+  clean: cleanFolder,
   buildFolder: buildFolder,
   srcFolder: srcFolder,
   rootFolder: rootFolder,
