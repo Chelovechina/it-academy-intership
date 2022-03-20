@@ -1,0 +1,56 @@
+{
+  "user1289": {
+    "photo": "https://i.pinimg.com/736x/99/d6/9e/99d69e729f71b2b8e5f065efa8e767b2.jpg",
+    "lastName": "Усенбеков",
+    "name": "Канат",
+    "status": "Студент",
+    "sex": "Мужчина",
+    "dateOfBithday": "12.12.2000",
+    "email": "usenbekov_kanat@gmail.com",
+    "phoneNumber": "+996 (999) 999 999",
+    "country": "Кыргызстан",
+    "city": "Бишкек",
+    "address": "ул. Коперникова 128/97",
+    "dateOfRegister": "15.09.2019",
+    "coursesDone": [
+      {
+        "nameOfcourse": "C# - разработчик",
+        "ID": "672",
+        "dateOfRecording": "07.10.2019",
+        "dateOFExpiration": "17.03.2020",
+        "grade": "Отлично",
+        "practiceDone": "22",
+        "countOfPractice": "22",
+        "courseWork": "https://www.google.ru/"
+      },
+      {
+        "nameOfcourse": "Java - разработчик",
+        "ID": "894",
+        "dateOfRecording": "25.03.2020",
+        "dateOFExpiration": "25.06.2020",
+        "grade": "Отлично",
+        "practiceDone": "19",
+        "countOfPractice": "19",
+        "courseWork": "https://www.google.ru/"
+      }
+    ],
+    "coursesInProcess": [
+      {
+        "nameOfcourse": "Python - разработчик",
+        "ID": "732",
+        "dateOfRecording": "01.06.2021",
+        "progress": "87%",
+        "practiceDone": "20",
+        "countOfPractice": "25"
+      },
+      {
+        "nameOfcourse": "PHP - разработчик",
+        "ID": "1032",
+        "dateOfRecording": "18.01.2022",
+        "progress": "36%",
+        "practiceDone": "21",
+        "countOfPractice": "27"
+      }
+    ]
+  }
+}
