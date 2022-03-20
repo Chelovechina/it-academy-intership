@@ -4,13 +4,12 @@ const server = createServer();
 
 server.routes([
   {
-    path: '/example',
+    path: '/user',
     methods: [
       {
         type: 'get', // or MethodType.GET with Typescript
-        data: 'your-response-data-here',
-        // data: (req) => 'your-response-data-here-based-in-request'
-      },
+        file: 'user.json',
+      }
     ],
   },
 ]);
