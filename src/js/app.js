@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function init() {
     let request = new XMLHttpRequest();
-    request.open('GET', 'http://localhost:3000/user1289');
+    request.open('GET', 'https://my-json-server.typicode.com/Chelovechina/it-academy-intershipDB/user1289');
     request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
     request.send();
 
