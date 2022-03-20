@@ -7,6 +7,7 @@ const cleanFolder = `{
   ./dist/css,
   ./dist/img/*.*,
   ./dist/index.html,
+  ./dist/js,
 }`;
 
 export const path = {

@@ -43,5 +43,9 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.67.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.15"
   }
 }

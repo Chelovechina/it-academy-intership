@@ -11,7 +11,7 @@
   <div class="wrapper">
     <header class="header">
   <div class="header__container container">
-    <a href="" class="header__logo"><img class="header__logo-img" src="img/logo.png" alt="logo"></a>
+    <a href="" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img class="header__logo-img" src="img/logo.png" alt="logo"></picture></a>
     <div class="header__menu menu">
       <div id="header-icon-menu" class="menu__icon">
         <span></span>
@@ -56,8 +56,8 @@
             <div class="aside-wrapper">
               <nav id="aside-nav" class="aside__nav navigation">
                 <ul class="aside__list">
-                  <li class="aside__item _active">
-                    <a href="#" class="aside__link">
+                  <li class="aside__item">
+                    <a data-goto=".personal-data" href="#" class="aside__link">
                       <span><svg class="aside__icon" fill="#ffffff">
                         <use xlink:href="./img/icons/aside-icons.svg#user"></use>
                       </svg></span>
@@ -65,7 +65,7 @@
                     </a>
                   </li>
                   <li class="aside__item">
-                    <a href="#" class="aside__link">
+                    <a data-goto=".cources-done" href="#" class="aside__link">
                       <span><svg class="aside__icon" fill="#ffffff">
                         <use xlink:href="./img/icons/aside-icons.svg#done"></use>
                       </svg></span>
@@ -73,7 +73,7 @@
                     </a>
                   </li>
                   <li class="aside__item">
-                    <a href="#" class="aside__link">
+                    <a data-goto=".cources-process" href="#" class="aside__link">
                       <span><svg class="aside__icon" fill="#ffffff">
                         <use xlink:href="./img/icons/aside-icons.svg#process"></use>
                       </svg></span>
@@ -89,122 +89,17 @@
               <div class="section__container">
                 <h2 class="section__title">Личные данные</h2>
                 <div class="personal-data__block">
-                  <div class="personal-data__avatar-block avatar-block">
-                    <img src="./img/avatar.jpg" alt="Avatar" class="avatar-block__img">
-                    <h4 class="avatar-block__name">Lastname Name</h4>
-                    <h5 class="avatar-block__status">Student</h5>
-                  </div>
-                  <div class="personal-data__info data-info">
-                    <div class="data-info__wrapper">
-                      <div class="data-info__left">
-                        <p class="data-info__key">Пол:</p>
-                        <p class="data-info__value">Мужчина</p>
-                        <p class="data-info__key">Дата рождения:</p>
-                        <p class="data-info__value">ХХ.ХХ.ХХХХг.</p>
-                        <p class="data-info__key">Email:</p>
-                        <p class="data-info__value">example@gmail.com</p>
-                        <p class="data-info__key">Номер телефона:</p>
-                        <p class="data-info__value">+996 (ХХХ) ХХХ ХХХ</p>
-                      </div>
-                      <div class="data-info__right">
-                        <p class="data-info__key">Страна:</p>
-                        <p class="data-info__value">Кыргызстан</p>
-                        <p class="data-info__key">Город:</p>
-                        <p class="data-info__value">Бишкек</p>
-                        <p class="data-info__key">Адрес:</p>
-                        <p class="data-info__value">ул. Гагарина 153/15</p>
-                        <p class="data-info__key">Дата регистрации:</p>
-                        <p class="data-info__value">ХХ.ХХ.ХХХХг.</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </section>
             <section class="cources-done section">
-              <div class="section__container">
+              <div class="cources-done__container section__container">
                 <h2 class="section__title">Пройденные курсы</h2>
-                <div class="cources-done__info data-info">
-                  <h5 class="data-info__title">C# - разработчик</h5>
-                  <div class="data-info__wrapper">
-                    <div class="data-info__left">
-                      <p class="data-info__key">ID:</p>
-                      <p class="data-info__value">XXXX</p>
-                      <p class="data-info__key">Дата записи:</p>
-                      <p class="data-info__value">XX.XX.XXXXг.</p>
-                      <p class="data-info__key">Дата окончания:</p>
-                      <p class="data-info__value">XX.XX.XXXXг.</p>
-                    </div>
-                    <div class="data-info__right">
-                      <p class="data-info__key">Оценка:</p>
-                      <p class="data-info__value">Отлично</p>
-                      <p class="data-info__key">Выполненные практики:</p>
-                      <p class="data-info__value">XX/XX</p>
-                      <p class="data-info__key">Курсовая работа:</p>
-                      <a class="data-info__value data-info__link">Посмотреть демо</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="cources-done__info data-info">
-                  <h5 class="data-info__title">Java - разработчик</h5>
-                  <div class="data-info__wrapper">
-                    <div class="data-info__left">
-                      <p class="data-info__key">ID:</p>
-                      <p class="data-info__value">XXXX</p>
-                      <p class="data-info__key">Дата записи:</p>
-                      <p class="data-info__value">XX.XX.XXXXг.</p>
-                      <p class="data-info__key">Дата окончания:</p>
-                      <p class="data-info__value">XX.XX.XXXXг.</p>
-                    </div>
-                    <div class="data-info__right">
-                      <p class="data-info__key">Оценка:</p>
-                      <p class="data-info__value">Отлично</p>
-                      <p class="data-info__key">Выполненные практики:</p>
-                      <p class="data-info__value">XX/XX</p>
-                      <p class="data-info__key">Курсовая работа:</p>
-                      <a class="data-info__value data-info__link">Посмотреть демо</a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </section>
             <section class="cources-process section">
-              <div class="section__container">
+              <div class="cources-process__container section__container">
                 <h2 class="section__title">Курсы в процессе</h2>
-                <div class="cources-done__info data-info">
-                  <h5 class="data-info__title">Python - разработчик</h5>
-                  <div class="data-info__wrapper">
-                    <div class="data-info__left">
-                      <p class="data-info__key">ID:</p>
-                      <p class="data-info__value">XXXX</p>
-                      <p class="data-info__key">Дата записи:</p>
-                      <p class="data-info__value">XX.XX.XXXXг.</p>
-                    </div>
-                    <div class="data-info__right">
-                      <p class="data-info__key">Прогресс:</p>
-                      <p class="data-info__value">XX%</p>
-                      <p class="data-info__key">Выполненные практики:</p>
-                      <p class="data-info__value">XX/XX</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="cources-done__info data-info">
-                  <h5 class="data-info__title">PHP - разработчик</h5>
-                  <div class="data-info__wrapper">
-                    <div class="data-info__left">
-                      <p class="data-info__key">ID:</p>
-                      <p class="data-info__value">XXXX</p>
-                      <p class="data-info__key">Дата записи:</p>
-                      <p class="data-info__value">XX.XX.XXXXг.</p>
-                    </div>
-                    <div class="data-info__right">
-                      <p class="data-info__key">Прогресс:</p>
-                      <p class="data-info__value">XX%</p>
-                      <p class="data-info__key">Выполненные практики:</p>
-                      <p class="data-info__value">XX/XX</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </section>
           </div>
